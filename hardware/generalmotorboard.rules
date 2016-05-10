@@ -1,0 +1,119 @@
+
+(rules PCB generalmotorboard
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 6561)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.7)
+    )
+  )
+  (rule
+    (width 254.0)
+    (clear 180.2)
+    (clear 127.0 (type smd_to_turn_gap))
+    (clear 45.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_1200:600_um"
+    (shape
+      (circle F.Cu 1200.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1200.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_1200:600_um" "Via[0-1]_1200:600_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1200:600_um-kicad_default" "Via[0-1]_1200:600_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-MotorPower" "Via[0-1]_800:400_um" MotorPower
+  )
+  (via 
+    "Via[0-1]_1200:600_um-MotorPower" "Via[0-1]_1200:600_um" MotorPower
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    MotorPower "Via[0-1]_1200:600_um-MotorPower"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 254.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    BATTERY GNDD "Net-(C2-Pad1)" "Net-(C3-Pad1)" RESET DTR "Net-(C5-Pad2)" "Net-(C6-Pad2)"
+    "Net-(C7-Pad1)" "Net-(D1-Pad1)" USBVCC +5V "Net-(D3-Pad1)" "Net-(D4-Pad2)" "Net-(D5-Pad2)" "Net-(D6-Pad2)"
+    "Net-(D7-Pad2)" "Net-(D7-Pad1)" "Net-(D8-Pad2)" "Net-(D8-Pad1)" IRLED "IR-RCV" STAT1 STAT2
+    MISO SCK 5VBATSENS 8VBATSENS SDA SCL RX TX
+    "TEMP_SENSOR" "Net-(IC2-Pad1)" "Net-(IC2-Pad15)" "Net-(IC2-Pad16)" "Net-(IC2-Pad19)" "Net-(IC3-Pad1)" "Net-(IC3-Pad2)" "Net-(IC3-Pad6)"
+    "Net-(IC4-Pad2)" "Net-(IC4-Pad3)" "Net-(IC4-Pad5)" "Net-(IC4-Pad6)" "Net-(IC5-Pad2)" "Net-(IC5-Pad3)" "Net-(IC5-Pad5)" "Net-(IC5-Pad6)"
+    "Net-(IC6-Pad2)" "Net-(IC6-Pad3)" "Net-(IC6-Pad5)" "Net-(IC6-Pad6)" PWM8 PWM9 "Net-(P7-Pad6)" "Net-(P9-Pad1)"
+    "Net-(P9-Pad2)" "Net-(Q1-Pad3)" "Net-(R20-Pad2)" "Net-(R21-Pad2)" "Net-(R22-Pad2)" "Net-(R23-Pad2)" A0 A1
+    A2 A3 "Net-(D9-Pad2)" "Net-(D10-Pad2)" D8 D9 D10 D11
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 254.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class MotorPower
+    GND +8V
+    (clearance_class MotorPower)
+    (via_rule MotorPower)
+    (rule
+      (width 1022.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
