@@ -1,0 +1,21 @@
+oroshi_tpip_md.name=RokkoOroshi TPIP Motor Board
+
+oroshi_tpip_md.upload.tool=arduino:avrdude
+oroshi_tpip_md.upload.protocol=arduino
+oroshi_tpip_md.upload.maximum_size=30720
+oroshi_tpip_md.upload.maximum_data_size=2048
+oroshi_tpip_md.upload.speed=115200
+
+oroshi_tpip_md.bootloader.tool=arduino:avrdude
+oroshi_tpip_md.bootloader.unlock_bits=0x3F
+oroshi_tpip_md.bootloader.lock_bits=0x0F
+oroshi_tpip_md.bootloader.low_fuses=0xff
+oroshi_tpip_md.bootloader.high_fuses=0xda
+oroshi_tpip_md.bootloader.extended_fuses=0x05
+oroshi_tpip_md.bootloader.file=optiboot_atmega328.hex
+
+oroshi_tpip_md.build.board=AVR_PRO
+oroshi_tpip_md.build.core=arduino:arduino
+oroshi_tpip_md.build.variant=tpip_md
+oroshi_tpip_md.build.mcu=atmega328p
+oroshi_tpip_md.build.f_cpu=16000000L
