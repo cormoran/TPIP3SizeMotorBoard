@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 cd `dirname $0`
 
 red=31
@@ -79,14 +79,14 @@ if [ -d $arduino ]; then
     dest="${arduino}/examples/RokkoOroshiTPIPMotorBoard"
     install $src $dest
     
-    #external library
-    src="`pwd`/external_library/Adafruit-PWM-Servo-Driver-Library/"
-    dest="${arduino}/libraries/Adafruit-PWM-Servo-Driver-Library"
-    install $src $dest
+    ##external library
+    #src="`pwd`/external_library/Adafruit-PWM-Servo-Driver-Library/"
+    #dest="${arduino}/libraries/Adafruit-PWM-Servo-Driver-Library"
+    #install $src $dest
 
-    src="`pwd`/external_library/DHT-sensor-library-1.2.3/"
-    dest="${arduino}/libraries/DHT-sensor-library-1.2.3"
-    install $src $dest
+    #src="`pwd`/external_library/DHT-sensor-library-1.2.3/"
+    #dest="${arduino}/libraries/DHT-sensor-library-1.2.3"
+    #install $src $dest
     
 else
     echo "Arduino IDE is not found under /Application"

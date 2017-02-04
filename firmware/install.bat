@@ -19,12 +19,12 @@ mklink /D "%DEST%" "%cd%\examples"
 
 rem externals
 
-set DEST="%ROOT_DIR%\libraries\Adafruit-PWM-Servo-Driver-Library"
-rmdir "%DEST%"
-mklink /D "%DEST%" "%cd%\external_library\Adafruit-PWM-Servo-Driver-Library"
+rem set DEST="%ROOT_DIR%\libraries\Adafruit-PWM-Servo-Driver-Library"
+rem rmdir "%DEST%"
+rem mklink /D "%DEST%" "%cd%\external_library\Adafruit-PWM-Servo-Driver-Library"
 
-set DEST="%ROOT_DIR%\libraries\DHT-sensor-library-1.2.3"
-rmdir "%DEST%"
-mklink /D "%DEST%" "%cd%\external_library\DHT-sensor-library-1.2.3"
+rem set DEST="%ROOT_DIR%\libraries\DHT-sensor-library-1.2.3"
+rem rmdir "%DEST%"
+rem mklink /D "%DEST%" "%cd%\external_library\DHT-sensor-library-1.2.3"
 
 pause
