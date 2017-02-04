@@ -1,0 +1,792 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>必要な部品 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="build.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    イントロダクション
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="parts.html">
+            
+                <a href="parts.html">
+            
+                    
+                    必要な部品
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="build.html">
+            
+                <a href="build.html">
+            
+                    
+                    制作方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="arduino-ide.html">
+            
+                <a href="arduino-ide.html">
+            
+                    
+                    ArduinoIDEのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="external-library.html">
+            
+                <a href="external-library.html">
+            
+                    
+                    依存ライブラリのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="assign-board.html">
+            
+                <a href="assign-board.html">
+            
+                    
+                    ボードの登録
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="test-program.html">
+            
+                <a href="test-program.html">
+            
+                    
+                    テストプログラムの実行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="library.html">
+            
+                <a href="library.html">
+            
+                    
+                    ライブラリのリファレンス
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >必要な部品</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5FC5;&#x8981;&#x306A;&#x90E8;&#x54C1;">&#x5FC5;&#x8981;&#x306A;&#x90E8;&#x54C1;</h1>
+<p>&#x521D;&#x56DE;&#x5236;&#x4F5C;&#x6642;&#x306E;&#x90E8;&#x54C1;&#x5728;&#x5EAB;&#x306B;&#x5408;&#x308F;&#x305B;&#x3066;&#x9069;&#x5F53;&#x306B;&#x3057;&#x3066;&#x3044;&#x308B;&#x3068;&#x3053;&#x308D;&#x3082;&#x3042;&#x308B;</p>
+<p>&#x9069;&#x5F53;&#x306A;&#x30E1;&#x30E2;&#x3092;md&#x5316;&#x3057;&#x305F;&#x3060;&#x3051;&#x306A;&#x306E;&#x3067;&#x6B63;&#x78BA;&#x3055;&#x4E0D;&#x660E;</p>
+<p><img src="assets/sch.pdf" alt=""></p>
+<h2 id="&#x62B5;&#x6297;">&#x62B5;&#x6297;</h2>
+<ul>
+<li>&#x30C1;&#x30C3;&#x30D7;2012&#x30B5;&#x30A4;&#x30BA;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>&#x30B7;&#x30F3;&#x30DC;&#x30EB;</th>
+<th>&#x5024;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R1</td>
+<td>0&#xFF08;&#x534A;&#x7530;&#x30D6;&#x30EA;&#x30C3;&#x30B8;&#x3067;&#x826F;&#x3044;&#xFF09;</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>10k</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>10k</td>
+</tr>
+<tr>
+<td>R4</td>
+<td>4.7k</td>
+</tr>
+<tr>
+<td>R5</td>
+<td>4.7k</td>
+</tr>
+<tr>
+<td>R6</td>
+<td>4.7k</td>
+</tr>
+<tr>
+<td>R7</td>
+<td>10k</td>
+</tr>
+<tr>
+<td>R8</td>
+<td>470</td>
+</tr>
+<tr>
+<td>R9</td>
+<td>470</td>
+</tr>
+<tr>
+<td>R10</td>
+<td>330</td>
+</tr>
+<tr>
+<td>R11</td>
+<td>1k</td>
+</tr>
+<tr>
+<td>R12</td>
+<td>20k</td>
+</tr>
+<tr>
+<td>R13</td>
+<td>10k</td>
+</tr>
+<tr>
+<td>R14</td>
+<td>30k</td>
+</tr>
+<tr>
+<td>R15</td>
+<td>10k</td>
+</tr>
+<tr>
+<td>R16</td>
+<td>470</td>
+</tr>
+<tr>
+<td>R17</td>
+<td>470</td>
+</tr>
+<tr>
+<td>R18</td>
+<td>330</td>
+</tr>
+<tr>
+<td>R19</td>
+<td>330</td>
+</tr>
+<tr>
+<td>R20</td>
+<td>4.7k</td>
+</tr>
+<tr>
+<td>R21</td>
+<td>4.7k</td>
+</tr>
+<tr>
+<td>R22</td>
+<td>4.7k</td>
+</tr>
+<tr>
+<td>R23</td>
+<td>4.7k</td>
+</tr>
+<tr>
+<td>R24</td>
+<td>10k</td>
+</tr>
+<tr>
+<td>R25</td>
+<td>470</td>
+</tr>
+<tr>
+<td>R26</td>
+<td>470</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x534A;&#x56FA;&#x5B9A;&#x62B5;&#x6297;">&#x534A;&#x56FA;&#x5B9A;&#x62B5;&#x6297;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x30B7;&#x30F3;&#x30DC;&#x30EB;</th>
+<th>&#x5024;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RV1</td>
+<td>10k</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x30B3;&#x30F3;&#x30C7;&#x30F3;&#x30B5;">&#x30B3;&#x30F3;&#x30C7;&#x30F3;&#x30B5;</h2>
+<ul>
+<li>&#x30C1;&#x30C3;&#x30D7;2012&#x30B5;&#x30A4;&#x30BA;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>&#x30B7;&#x30F3;&#x30DC;&#x30EB;</th>
+<th>&#x5024;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C1</td>
+<td>0.33uF (0.47uF&#x3067;&#x4EE3;&#x7528;)</td>
+</tr>
+<tr>
+<td>C2</td>
+<td>100nF</td>
+</tr>
+<tr>
+<td>C3</td>
+<td>2.2uF</td>
+</tr>
+<tr>
+<td>C4</td>
+<td>0.1uF</td>
+</tr>
+<tr>
+<td>C5</td>
+<td>22pF (15pF&#x3067;&#x4EE3;&#x7528;)</td>
+</tr>
+<tr>
+<td>C6</td>
+<td>22pF (15pF&#x3067;&#x4EE3;&#x7528;)</td>
+</tr>
+<tr>
+<td>C7</td>
+<td>100nF</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x96FB;&#x89E3;&#x30B3;&#x30F3;&#x30C7;&#x30F3;&#x30B5;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>&#x30B7;&#x30F3;&#x30DC;&#x30EB;</th>
+<th>&#x5024;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C8</td>
+<td>470uF</td>
+</tr>
+<tr>
+<td>C9</td>
+<td>470uF</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x30C0;&#x30A4;&#x30AA;&#x30FC;&#x30C9;">&#x30C0;&#x30A4;&#x30AA;&#x30FC;&#x30C9;</h2>
+<p>| D1 | D | 
+| D2 | D | 
+| D3 | D | </p>
+<h2 id="led">LED</h2>
+<ul>
+<li>&#x30C1;&#x30C3;&#x30D7;2012&#x30B5;&#x30A4;&#x30BA;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>&#x30B7;&#x30F3;&#x30DC;&#x30EB;</th>
+<th>&#x5024;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D4</td>
+<td>LED GREEN&#xFF08;&#x7DD1;&#xFF09;</td>
+</tr>
+<tr>
+<td>D5</td>
+<td>LED RED&#xFF08;&#x8D64;&#xFF09;</td>
+</tr>
+<tr>
+<td>D7</td>
+<td>Led FIN&#xFF08;&#x4EFB;&#x610F;&#xFF09;</td>
+</tr>
+<tr>
+<td>D8</td>
+<td>Led RIN&#xFF08;&#x4EFB;&#x610F;&#xFF09;</td>
+</tr>
+<tr>
+<td>D9</td>
+<td>Led MBAT&#xFF08;&#x8D64;&#xFF09;</td>
+</tr>
+<tr>
+<td>D10</td>
+<td>Led LBAT&#xFF08;&#x8D64;&#xFF09;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x7832;&#x5F3E;&#x578B;&#x3C6;5mm</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>&#x30B7;&#x30F3;&#x30DC;&#x30EB;</th>
+<th>&#x5024;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D6</td>
+<td>LED IR</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fet">FET</h2>
+<table>
+<thead>
+<tr>
+<th>&#x30B7;&#x30F3;&#x30DC;&#x30EB;</th>
+<th>&#x5024;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q1</td>
+<td>Q_PMOS_GSD</td>
+</tr>
+<tr>
+<td>Q2</td>
+<td>Q_PMOS_GSD</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ic&#x985E;">IC&#x985E;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x30B7;&#x30F3;&#x30DC;&#x30EB;</th>
+<th>&#x5024;</th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IC1</td>
+<td>ATMEGA328P-A</td>
+<td>&#x30E1;&#x30A4;&#x30F3;&#x30DE;&#x30A4;&#x30B3;&#x30F3;</td>
+</tr>
+<tr>
+<td>IC2</td>
+<td>FT232RL</td>
+<td>USB&#x30B7;&#x30EA;&#x30A2;&#x30EB;&#x5909;&#x63DB;IC</td>
+</tr>
+<tr>
+<td>IC3</td>
+<td>BD6222HFP</td>
+<td>&#x30E2;&#x30FC;&#x30BF;&#x30C9;&#x30E9;&#x30A4;&#x30D0;</td>
+</tr>
+<tr>
+<td>IC4</td>
+<td>BD6222HFP</td>
+<td></td>
+</tr>
+<tr>
+<td>IC5</td>
+<td>BD6222HFP</td>
+<td></td>
+</tr>
+<tr>
+<td>IC6</td>
+<td>BD6222HFP</td>
+<td></td>
+</tr>
+<tr>
+<td>IC7</td>
+<td>PCA9685</td>
+<td>PWM&#x51FA;&#x529B;IC</td>
+</tr>
+<tr>
+<td>U1</td>
+<td>NJM2845DL1</td>
+<td>&#x96FB;&#x5727;&#x5909;&#x63DB;&#x7528;</td>
+</tr>
+<tr>
+<td>U2</td>
+<td>DHT11</td>
+<td>&#x6E29;&#x5EA6;&#x30BB;&#x30F3;&#x30B5;&#x30FC;</td>
+</tr>
+<tr>
+<td>U4</td>
+<td>IR_Receiver</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x30B3;&#x30CD;&#x30AF;&#x30BF;">&#x30B3;&#x30CD;&#x30AF;&#x30BF;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x30B7;&#x30F3;&#x30DC;&#x30EB;</th>
+<th>&#x5024;</th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P1</td>
+<td>ZH&#x30B3;&#x30CD;&#x30AF;&#x30BF;</td>
+<td>ISP Writer</td>
+</tr>
+<tr>
+<td>P2</td>
+<td>XH&#x30B3;&#x30CD;&#x30AF;&#x30BF;</td>
+<td>MOTOR-BAT</td>
+</tr>
+<tr>
+<td>P3</td>
+<td>XH&#x30B3;&#x30CD;&#x30AF;&#x30BF;</td>
+<td>LOGIC-BAT</td>
+</tr>
+<tr>
+<td>P4</td>
+<td>&#x30D4;&#x30F3;&#x30D8;&#x30C3;&#x30C0;</td>
+<td>JUMP</td>
+</tr>
+<tr>
+<td>P5</td>
+<td>Grove&#x30B3;&#x30CD;&#x30AF;&#x30BF;</td>
+<td>Grove</td>
+</tr>
+<tr>
+<td>P6</td>
+<td>XH&#x30B3;&#x30CD;&#x30AF;&#x30BF;</td>
+<td>Serial</td>
+</tr>
+<tr>
+<td>P7</td>
+<td>Mini-USB&#x30E1;&#x30B9;</td>
+<td>USB_OTG</td>
+</tr>
+<tr>
+<td>P8</td>
+<td>&#x30D4;&#x30F3;&#x30D8;&#x30C3;&#x30C0;&#x6A2A;</td>
+<td>IO</td>
+</tr>
+<tr>
+<td>P9</td>
+<td>&#x30D4;&#x30F3;&#x30D8;&#x30C3;&#x30C0;&#x6A2A;</td>
+<td>SERVO</td>
+</tr>
+<tr>
+<td>P10</td>
+<td>XH&#x30B3;&#x30CD;&#x30AF;&#x30BF;</td>
+<td>Motor0</td>
+</tr>
+<tr>
+<td>P11</td>
+<td>XH&#x30B3;&#x30CD;&#x30AF;&#x30BF;</td>
+<td>Motor1</td>
+</tr>
+<tr>
+<td>P12</td>
+<td>XH&#x30B3;&#x30CD;&#x30AF;&#x30BF;</td>
+<td>Motor2</td>
+</tr>
+<tr>
+<td>P13</td>
+<td>XH&#x30B3;&#x30CD;&#x30AF;&#x30BF;</td>
+<td>Motor3</td>
+</tr>
+<tr>
+<td>P14</td>
+<td>&#x30D4;&#x30F3;&#x30D8;&#x30C3;&#x30C0;&#x6A2A;</td>
+<td>IO</td>
+</tr>
+<tr>
+<td>P15</td>
+<td>&#x30D4;&#x30F3;&#x30D8;&#x30C3;&#x30C0;&#x6A2A;</td>
+<td>IO</td>
+</tr>
+<tr>
+<td>P16</td>
+<td>&#xFF08;&#x306A;&#x3057;&#xFF09;</td>
+<td>IOPAD</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x30B9;&#x30A4;&#x30C3;&#x30C1;">&#x30B9;&#x30A4;&#x30C3;&#x30C1;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x30B7;&#x30F3;&#x30DC;&#x30EB;</th>
+<th>&#x5024;</th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SW1</td>
+<td>&#x30BF;&#x30AF;&#x30C8;&#x30B9;&#x30A4;&#x30C3;&#x30C1;</td>
+<td>SW_PUSH</td>
+</tr>
+<tr>
+<td>SW2</td>
+<td>DIP&#x30B9;&#x30A4;&#x30C3;&#x30C1;</td>
+<td>SETTING</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x305D;&#x306E;&#x4ED6;">&#x305D;&#x306E;&#x4ED6;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x30B7;&#x30F3;&#x30DC;&#x30EB;</th>
+<th>?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Y1</td>
+<td>16MHz&#x6C34;&#x6676;&#x767A;&#x632F;&#x5B50;</td>
+</tr>
+<tr>
+<td>F1</td>
+<td>&#x30DD;&#x30EA;&#x30B9;&#x30A4;&#x30C3;&#x30C1;500mA</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: イントロダクション">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="build.html" class="navigation navigation-next " aria-label="Next page: 制作方法">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"必要な部品","level":"1.2","depth":1,"next":{"title":"制作方法","level":"1.3","depth":1,"path":"build.md","ref":"build.md","articles":[]},"previous":{"title":"イントロダクション","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"parts.md","mtime":"2017-02-04T23:32:15.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-04T23:37:03.254Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,362 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>制作方法 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="arduino-ide.html" />
+    
+    
+    <link rel="prev" href="parts.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    イントロダクション
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="parts.html">
+            
+                <a href="parts.html">
+            
+                    
+                    必要な部品
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="build.html">
+            
+                <a href="build.html">
+            
+                    
+                    制作方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="arduino-ide.html">
+            
+                <a href="arduino-ide.html">
+            
+                    
+                    ArduinoIDEのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="external-library.html">
+            
+                <a href="external-library.html">
+            
+                    
+                    依存ライブラリのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="assign-board.html">
+            
+                <a href="assign-board.html">
+            
+                    
+                    ボードの登録
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="test-program.html">
+            
+                <a href="test-program.html">
+            
+                    
+                    テストプログラムの実行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="library.html">
+            
+                <a href="library.html">
+            
+                    
+                    ライブラリのリファレンス
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >制作方法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5236;&#x4F5C;&#x65B9;&#x6CD5;">&#x5236;&#x4F5C;&#x65B9;&#x6CD5;</h1>
+<p>&#x6614;&#x66F8;&#x304D;&#x6BB4;&#x3063;&#x305F;&#x6587;&#x7AE0;&#x305D;&#x306E;&#x307E;&#x307E;&#x3067;&#x3059;&#xFF0E;</p>
+<ol>
+<li><p>&#x30C1;&#x30C3;&#x30D7;&#x62B5;&#x6297;&#x306E;&#x53D6;&#x308A;&#x4ED8;&#x3051;</p>
+<p> &#x30D1;&#x30FC;&#x30C4;&#x30EA;&#x30B9;&#x30C8;&#x306E;&#x62B5;&#x6297;R1~R26&#x3092;&#x53D6;&#x308A;&#x4ED8;&#x3051;&#x308B;</p>
+<p> R1&#x306F;&#x30E2;&#x30FC;&#x30BF;&#x30FC;&#x306E;GND&#x3068;&#x30DE;&#x30A4;&#x30B3;&#x30F3;&#x5074;&#x306E;GND&#x3092;&#x63A5;&#x7D9A;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;&#x30D6;&#x30EA;&#x30C3;&#x30B8;&#x3067;&#x3001;&#x534A;&#x7530;&#x3067;&#x30B8;&#x30E3;&#x30F3;&#x30D7;&#x3057;&#x3066;&#x304A;&#x3051;&#x3070;&#x826F;&#x3044;</p>
+<p> &#x62B5;&#x6297;&#x306F;&#x71B1;&#x306B;&#x5F37;&#x304F;&#x3001;&#x6975;&#x6027;&#x304C;&#x306A;&#x3044;&#x306E;&#x3067;&#x3001;&#x3053;&#x3053;&#x3067;&#x5C0F;&#x3055;&#x3044;&#x90E8;&#x54C1;&#x306E;&#x534A;&#x7530;&#x4ED8;&#x3051;&#x306B;&#x6163;&#x308C;&#x308B;&#x3002;</p>
+<p> &#x30C1;&#x30C3;&#x30D7;&#x90E8;&#x54C1;&#x306F;&#x3001;&#x57FA;&#x677F;&#x306E;&#x7247;&#x65B9;&#x306E;&#x30E9;&#x30F3;&#x30C9;&#x306B;&#x534A;&#x7530;&#x3092;&#x5148;&#x306B;&#x3064;&#x3051;&#x3066;&#x304A;&#x3044;&#x3066;&#x3001;&#x305D;&#x308C;&#x3092;&#x6EB6;&#x304B;&#x3057;&#x306A;&#x304C;&#x3089;&#x30C1;&#x30C3;&#x30D7;&#x306E;&#x7247;&#x65B9;&#x3092;&#x8F09;&#x305B;&#x308B;&#xFF08;&#x6587;&#x3067;&#x306F;&#x66F8;&#x304D;&#x306B;&#x304F;&#x3044;&#xFF09;&#x3001;&#x305D;&#x306E;&#x5F8C;&#x3082;&#x3046;&#x7247;&#x65B9;&#x3092;&#x534A;&#x7530;&#x4ED8;&#x3051;&#x3059;&#x308B;&#x3001;&#x3068;&#x3044;&#x3046;&#x65B9;&#x6CD5;&#x304C;&#x3084;&#x308A;&#x3084;&#x3059;&#x3044;&#x3068;&#x601D;&#x3046;&#x3002;</p>
+</li>
+<li><p>&#x30C1;&#x30C3;&#x30D7;&#x30B3;&#x30F3;&#x30C7;&#x30F3;&#x30B5;&#x306E;&#x53D6;&#x308A;&#x4ED8;&#x3051;</p>
+<p>  &#x62B5;&#x6297;&#x3068;&#x540C;&#x69D8;&#x306E;&#x8981;&#x9818;&#x3067;&#x30B3;&#x30F3;&#x30C7;&#x30F3;&#x30B5;C1~C7&#x3092;&#x53D6;&#x308A;&#x4ED8;&#x3051;&#x308B;&#x3002;</p>
+</li>
+<li><p>&#x30C0;&#x30A4;&#x30AA;&#x30FC;&#x30C9;&#x306E;&#x53D6;&#x308A;&#x4ED8;&#x3051;&#xFF08;&#x6975;&#x6027;&#x3042;&#x308A;&#xFF09;</p>
+<p> D1~D3&#x306B;&#x30C1;&#x30C3;&#x30D7;&#x30C0;&#x30A4;&#x30AA;&#x30FC;&#x30C9;&#x3092;&#x53D6;&#x308A;&#x4ED8;&#x3051;&#x308B;&#x3002;&#x6975;&#x6027;&#x304C;&#x3042;&#x308B;&#x306E;&#x3067;&#x6CE8;&#x610F;&#xFF08;&#x7DDA;&#x306E;&#x4F4D;&#x7F6E;&#x3092;&#x57FA;&#x677F;&#x306E;&#x7D75;&#x3068;&#x5408;&#x308F;&#x305B;&#x308C;&#x3070;&#x826F;&#x3044;&#x306F;&#x305A;&#xFF09;</p>
+</li>
+<li><p>LED&#x306E;&#x53D6;&#x308A;&#x4ED8;&#x3051;&#xFF08;&#x6975;&#x6027;&#x3042;&#x308A;&#x3001;&#x71B1;&#x306B;&#x7279;&#x306B;&#x5F31;&#x3044;&#xFF09;</p>
+<p> D4~D10&#x306B;&#x30C1;&#x30C3;&#x30D7;&#x30C0;&#x30A4;&#x30AA;&#x30FC;&#x30C9;&#x3092;&#x53D6;&#x308A;&#x4ED8;&#x3051;&#x308B;&#x3002;&#x6975;&#x6027;&#x304C;&#x3042;&#x308B;&amp;&#x71B1;&#x306B;&#x7279;&#x306B;&#x5F31;&#x3044;&#x306E;&#x3067;&#x6CE8;&#x610F;&#x3002;</p>
+<p> &#x307E;&#x305F;&#x3001;&#x8272;&#x304C;&#x9055;&#x3046;&#x3068;LED&#x306B;&#x5370;&#x5237;&#x3055;&#x308C;&#x305F;&#x30DE;&#x30FC;&#x30AF;&#x304C;&#x540C;&#x3058;&#x306A;&#x306E;&#x306B;&#x6975;&#x304C;&#x9006;&#x306B;&#x306A;&#x3063;&#x3066;&#x3044;&#x308B;&#x3068;&#x3044;&#x3046;&#x3053;&#x3068;&#x304C;&#x3042;&#x308B;&#x306E;&#x3067;&#x6CE8;&#x610F;&#xFF01;&#xFF01;</p>
+</li>
+<li><p>&#x305D;&#x306E;&#x4ED6;&#x90E8;&#x54C1;&#x306E;&#x53D6;&#x308A;&#x4ED8;&#x3051;</p>
+<p>  &#x4E00;&#x901A;&#x308A;&#x53D6;&#x308A;&#x4ED8;&#x3051;&#x3066;&#x6163;&#x308C;&#x3066;&#x304D;&#x305F;&#x306F;&#x305A;&#x306A;&#x306E;&#x3067;&#x597D;&#x304D;&#x306A;&#x9806;&#x306B;&#x3064;&#x3051;&#x3066;&#x3044;&#x3051;&#x3070;&#x826F;&#x3044;&#x3002;</p>
+<p> &#x6C17;&#x3092;&#x3064;&#x3051;&#x308B;&#x70B9;&#x3068;&#x3057;&#x3066;&#x3001;&#x71B1;&#x306B;&#x5F31;&#x3044;&#x90E8;&#x54C1;&#x306F;&#x3067;&#x304D;&#x308B;&#x3060;&#x3051;&#x5F8C;&#x306B;&#x3059;&#x308B;&#x3001;&#x6975;&#x6027;&#x304C;&#x3042;&#x308B;&#x90E8;&#x54C1;&#x306F;&#x6CE8;&#x610F;&#x3059;&#x308B;&#x3001;&#x4ED6;&#x306E;&#x90E8;&#x54C1;&#x306E;&#x53D6;&#x308A;&#x4ED8;&#x3051;&#x306E;&#x90AA;&#x9B54;&#x306B;&#x306A;&#x308B;&#x3088;&#x3046;&#x306A;&#x90E8;&#x54C1;&#x306F;&#x3067;&#x304D;&#x308B;&#x3060;&#x3051;&#x5F8C;&#x56DE;&#x3057;&#x306B;&#x3059;&#x308B;&#x3001;&#x7B49;&#x3002;</p>
+<p> &#x30DE;&#x30A4;&#x30B3;&#x30F3;&#x7B49;&#x306E;IC&#x306F;&#x3001;&#x5148;&#x306B;&#x30E9;&#x30F3;&#x30C9;&#x306B;&#x534A;&#x7530;&#x3092;&#x5857;&#x3063;&#x3066;&#x304A;&#x3044;&#x3066;&#x3001;&#x30D1;&#x30FC;&#x30C4;&#x3092;&#x4E0A;&#x306B;&#x4E57;&#x305B;&#x3066;&#x3001;&#x534A;&#x7530;&#x3054;&#x3066;&#x3092;&#x62BC;&#x3057;&#x4ED8;&#x3051;&#x3066;&#x6EB6;&#x304B;&#x3057;&#x3064;&#x3051;&#x308B;&#x306E;&#x304C;&#x3001;&#x30D6;&#x30EA;&#x30C3;&#x30B8;&#x3057;&#x306B;&#x304F;&#x304F;&#x3066;&#x826F;&#x3044;&#x3068;&#x601D;&#x3046;&#x3002;</p>
+<p> &#x30AA;&#x30B9;&#x30B9;&#x30E1;&#x306E;&#x9806;&#x756A;&#xFF08;&#x9069;&#x5F53;&#xFF09;</p>
+<ul>
+<li>&#x30E2;&#x30FC;&#x30BF;&#x30FC;&#x30C9;&#x30E9;&#x30A4;&#x30D0;</li>
+<li>&#x96FB;&#x5727;&#x5909;&#x63DB;IC&#xFF08;&#x4E09;&#x7AEF;&#x5B50;&#x30EC;&#x30AE;&#x30E5;&#x30EC;&#x30FC;&#x30BF;&#xFF09;</li>
+<li>FET</li>
+<li><p>&#x30DD;&#x30EA;&#x30B9;&#x30A4;&#x30C3;&#x30C1;</p>
+</li>
+<li><p>atmega328p</p>
+</li>
+<li>PCA9685</li>
+<li><p>FT232RL</p>
+</li>
+<li><p>&#x305D;&#x306E;&#x4ED6;&#x306E;&#x8868;&#x9762;&#x5B9F;&#x88C5;&#x90E8;&#x54C1;</p>
+</li>
+<li>USB</li>
+<li>&#x305D;&#x306E;&#x4ED6;&#x306E;&#x5927;&#x304D;&#x3044;&#x90E8;&#x54C1; </li>
+</ul>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="parts.html" class="navigation navigation-prev " aria-label="Previous page: 必要な部品">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="arduino-ide.html" class="navigation navigation-next " aria-label="Next page: ArduinoIDEのインストール">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"制作方法","level":"1.3","depth":1,"next":{"title":"ArduinoIDEのインストール","level":"1.4","depth":1,"path":"arduino-ide.md","ref":"arduino-ide.md","articles":[]},"previous":{"title":"必要な部品","level":"1.2","depth":1,"path":"parts.md","ref":"parts.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"build.md","mtime":"2017-02-04T23:35:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-04T23:37:03.254Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
