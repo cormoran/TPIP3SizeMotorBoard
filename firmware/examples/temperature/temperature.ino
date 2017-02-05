@@ -11,7 +11,7 @@
 DHT dht(DHTPIN, DHTTYPE);
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial.println("DHT11 test!");
 
   dht.begin();
@@ -46,11 +46,12 @@ void loop() {
   Serial.print("Temperature: ");
   Serial.print(t);
   Serial.print(" *C ");
-  Serial.print(f);
-  Serial.print(" *F\t");
+  // Serial.print(f);
+  // Serial.print(" *F\t");
   Serial.print("Heat index: ");
   Serial.print(hic);
   Serial.print(" *C ");
-  Serial.print(hif);
-  Serial.println(" *F");
+  // Serial.print(hif);
+  // Serial.println(" *F");
+   Serial.println("");
 }
